@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Almarai", sans-serif;
   background: #f2f2f2;
+  margin: 0 1rem;
 }
 main {
   min-height: 100vh;
@@ -14,14 +15,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid black;
-  margin: 2rem;
+  margin: 2rem 1rem 4.5rem 1rem;
 }
 nav ul,
 h1 {
   margin-bottom: 0.5rem;
 }
 nav a:hover {
-  color: black;
+  font-weight: bold;
 }
 ul {
   display: flex;
@@ -34,7 +35,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: #545454;
+  color: #171717;
 }
 
 section {
@@ -44,37 +45,44 @@ section {
 }
 .left-side {
   height: 100%;
+  text-align: left;
 }
 .left-side h2 {
   font-weight: bold;
   font-size: 40px;
-  margin: 2.5rem 0;
+  margin-bottom: 1.5rem;
 }
 .left-side h3 {
   font-weight: bolder;
   line-height: 5rem;
   font-size: 85.74px;
+  margin-bottom: 2.5rem;
+  color: #171717;
 }
 .left-side p {
   color: #545454;
+  font-size: 18px;
+  margin: 0;
 }
 button {
   border-radius: 36px;
   background: #d4fda3;
-  border: 1.5px solid black;
-  padding: 0.3rem;
+  border: 2px solid black;
+  padding: 0.5rem;
   text-align: center;
   cursor: pointer;
+  font-weight: bold;
 }
 .side-button {
   display: flex;
   align-items: center;
 }
 .side-button button {
-  margin: 2.5rem 0;
+  /* margin: 2.5rem 0; */
   margin-left: 1rem;
 }
 .right-side img {
   height: 30rem;
   width: 31rem;
+  margin-left: 4rem;
 }
