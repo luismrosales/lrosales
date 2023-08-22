@@ -64,7 +64,7 @@ section {
   font-size: 18px;
   margin: 0;
 }
-button {
+.green-button {
   border-radius: 36px;
   background: #d4fda3;
   border: 2px solid black;
@@ -98,7 +98,11 @@ header {
 }
 
 .second-page {
-  min-height: 100vh;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .third-page {
   min-height: 75vh;
@@ -148,4 +152,43 @@ input::placeholder {
 
 .cards {
   display: flex;
+  margin-bottom: 4rem;
+}
+.card {
+  height: 260px;
+  width: 437px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  border-radius: 16px;
+  box-shadow: 1px 1px 4px 4px rgb(225, 225, 225);
+  text-align: left;
+}
+.card h3 {
+  font-size: 32px;
+  font-weight: lighter;
+  margin: 1.5rem 0rem 1.5rem 2rem;
+}
+.featured {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  margin-left: 2rem;
+}
+
+.description {
+  display: flex;
+}
+.description p {
+  font-size: 16px;
+}
+.learn-more {
+  width: 16rem;
+  height: 2.5rem;
+  text-align: center;
+  border: #171717 solid 1.2px;
+  border-radius: 36px;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0;
 }
