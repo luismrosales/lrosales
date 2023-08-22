@@ -145,3 +145,7 @@ input::placeholder {
 .form-btn {
   margin-top: 4rem;
 }
+
+.cards {
+  display: flex;
+}
