@@ -68,7 +68,7 @@ button {
   border-radius: 36px;
   background: #d4fda3;
   border: 2px solid black;
-  padding: 0.5rem;
+  padding: 1rem;
   text-align: center;
   cursor: pointer;
   font-weight: bold;
@@ -86,12 +86,62 @@ button {
   width: 31rem;
   margin-left: 4rem;
 }
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid black;
-  margin: 2rem 1rem 4.5rem 1rem;
+  margin: 2rem 1rem 4rem 1rem;
   font-size: 20px;
   font-weight: bold;
+}
+
+.second-page {
+  min-height: 100vh;
+}
+.third-page {
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+}
+
+.delia:hover {
+  text-decoration: underline;
+}
+form {
+  text-align: center;
+}
+input {
+  outline: none;
+  padding: 1rem;
+  width: 409px;
+  border: none;
+  border-bottom: #171717 solid 2px;
+  position: relative;
+  font-size: larger;
+}
+input::placeholder {
+  font-weight: 400;
+  color: #171717;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+}
+#message {
+  width: 898px;
+  margin-top: 4rem;
+}
+
+.form-btn {
+  margin-top: 4rem;
 }
