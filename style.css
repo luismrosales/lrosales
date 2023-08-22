@@ -73,6 +73,11 @@ section {
   cursor: pointer;
   font-weight: bold;
 }
+.green-button a {
+  cursor: pointer;
+  font-weight: bold;
+  background: none;
+}
 .side-button {
   display: flex;
   align-items: center;
