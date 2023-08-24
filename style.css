@@ -147,7 +147,7 @@ input::placeholder {
   bottom: 0;
 }
 #message {
-  width: 898px;
+  width: 862px;
   margin-top: 4rem;
 }
 
@@ -196,4 +196,14 @@ input::placeholder {
   font-weight: bold;
   font-size: 14px;
   margin: 0;
+}
+
+.fa-solid {
+  background: none;
+}
+.contact-email:hover {
+  text-decoration: underline;
+}
+.number:hover {
+  text-decoration: underline;
 }
