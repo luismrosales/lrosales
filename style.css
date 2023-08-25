@@ -11,6 +11,7 @@ main {
   margin: 0 1rem;
 }
 nav {
+  letter-spacing: 2%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,6 +52,7 @@ section {
   font-weight: bold;
   font-size: 40px;
   margin-bottom: 1.5rem;
+  letter-spacing: -1%;
 }
 .left-side h3 {
   font-weight: bolder;
@@ -58,11 +60,14 @@ section {
   font-size: 85.74px;
   margin-bottom: 2.5rem;
   color: #171717;
+  letter-spacing: -1%;
 }
 .left-side p {
   color: #545454;
   font-size: 18px;
   margin: 0;
+  line-height: 140%;
+  letter-spacing: 1%;
 }
 .green-button {
   border-radius: 36px;
@@ -72,6 +77,9 @@ section {
   text-align: center;
   cursor: pointer;
   font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
 }
 .green-button a {
   cursor: pointer;
@@ -100,6 +108,7 @@ header {
   margin: 2rem 1rem 4rem 1rem;
   font-size: 20px;
   font-weight: bold;
+  letter-spacing: -1%;
 }
 
 .second-page {
@@ -145,6 +154,9 @@ input::placeholder {
   font-size: 18px;
   position: absolute;
   bottom: 0;
+  left: 0;
+  margin-bottom: 16px;
+  letter-spacing: 1%;
 }
 #message {
   width: 862px;
@@ -186,6 +198,7 @@ input::placeholder {
 }
 .description p {
   font-size: 16px;
+  line-height: 140%;
 }
 .learn-more {
   width: 16rem;
@@ -206,4 +219,7 @@ input::placeholder {
 }
 .number:hover {
   text-decoration: underline;
+}
+.arrow {
+  background: none;
 }
