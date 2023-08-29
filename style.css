@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  margin: 0 1rem;
+}
+body {
   font-family: "Almarai", sans-serif;
   background: #f2f2f2;
-  margin: 0 1rem;
 }
 main {
   min-height: 100vh;
@@ -147,6 +149,7 @@ input {
   border-bottom: #171717 solid 2px;
   position: relative;
   font-size: larger;
+  background: #f2f2f2;
 }
 input::placeholder {
   font-weight: 400;
@@ -170,17 +173,79 @@ input::placeholder {
 .cards {
   display: flex;
   margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
 .card {
   height: 260px;
   width: 437px;
   display: flex;
   flex-direction: column;
-
   justify-content: center;
+  align-items: center;
   border-radius: 16px;
   box-shadow: 1px 1px 4px 4px rgb(225, 225, 225);
   text-align: left;
+  grid-column: span 3;
+  margin-bottom: 2rem;
+
+  text-align: center;
+  cursor: pointer;
+}
+.card img {
+  display: none;
+}
+
+.card p {
+  display: none;
+}
+.card.active p {
+  display: block;
+}
+.card.active {
+  grid-column: 1 / span 6;
+  grid-row: 1;
+  order: 0;
+  width: 50%;
+  align-items: start;
+  overflow: hidden;
+  margin: auto;
+}
+.card.active.card1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/color.png");
+  background-size: cover;
+  background-position: center;
+  color: #f2f2f2;
+}
+.card.active.card2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/music.png");
+  background-size: cover;
+  background-position: center;
+  color: #f2f2f2;
+}
+.card.active.card3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/photography.png");
+  background-size: cover;
+  background-position: center;
+  color: #f2f2f2;
+}
+.card.active.card4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/color.png");
+  background-size: cover;
+  background-position: right;
+  color: #f2f2f2;
+}
+.card.is-inactive {
+  grid-column: span 2;
+  width: auto;
+  margin-top: 2rem;
+}
+.card.is-inactive.featured {
+  display: none;
 }
 .card h3 {
   font-size: 32px;
